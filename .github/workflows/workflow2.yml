@@ -1,0 +1,28 @@
+name: Second_Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  ubuntu-job:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Step1
+        run: echo 'Hello! This job is running for ubuntu-20.04'
+
+  windows-job:
+    runs-on: windows-2019
+    steps:
+      - name: Step2
+        run: echo 'Hello! This job is running for Windows-2019'
+
+  macos-job:
+    runs-on: macos-11
+    steps:
+      - name: Step3
+        run: echo 'Hello! This job is running for macOS-11'
