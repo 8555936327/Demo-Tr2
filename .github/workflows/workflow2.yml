@@ -22,7 +22,7 @@ jobs:
         run: echo 'Hello! This job is running for Windows-2019'
 
   macos-job:
-    runs-on: macos-11
+    runs-on: macos-latest
     steps:
       - name: Step3
         run: echo 'Hello! This job is running for macOS-11'
